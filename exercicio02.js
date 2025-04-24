@@ -1,6 +1,6 @@
 let valo1 = 10
 let valo2 = 15
-console.log(`Soma: ${valo1 + valo2}\nSubetração: ${valo1 - valo2}\nMultiplicação: ${valo1 * valo2}\nDivisão: ${valo1 / valo2}`)
+console.log(`Dado os valores ${valo1} e ${valo2}. Segue as operações:\nSoma: ${valo1 + valo2}\nSubetração: ${valo1 - valo2}\nMultiplicação: ${valo1 * valo2}\nDivisão: ${valo1 / valo2}`)
 
 let idd1 = 10
 let idd2 = 15
