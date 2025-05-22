@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  },
+  "name": "back-end",
+  "version": "1.0.0",
+  "main": "exercicio01.js",
+  "type":"module",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Elya-Zam/Back-end.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Elya-Zam/Back-end/issues"
+  },
+  "homepage": "https://github.com/Elya-Zam/Back-end#readme",
+  "description": ""
+}
