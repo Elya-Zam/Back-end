@@ -34,31 +34,39 @@ while (contAlun <= alu) {
 let mediageralturma = contNot/contAlun
 console.log(`Média Geral da Turma: ${mediageralturma.toFixed(2)}`)
 
-/*let numAd;
 
-let Ad = Math.floor(Math.random()*100)+1;
+const numAlea = Math.floor(Math.random()*100)+1;
+let chute;
 
-do{
-    numAd = entradaDados.questionInt('Adivinhe um número de 1 à 100: ');
-    if(numAd === Ad){
-        console.log('Parabéns! Você adivinhou o número.')
-    }else if(numAd < Ad){
-        console.log('Tente número maior.')
+do {
+    chute= input.questionInt('tente adivinhar o número (entre 1 e 100): ')
+    if(chute === numAlea) {
+        console.log('parabens! você acertou o número ')
+
+    } else if(chute<numAlea) {
+        console.log('Tente um numero maior')
+    } else {
+        console.log('Tente um numero menor')
     }
-}while(numAd !== Ad);*/
 
-let nome = input.question(`Informe o nome da ${i}ª pessoa: `)
-let salario = input.questionFloat(`Informe o salario nome de ${nome}: `)
-let impostoRenda = 0
+} while (chute !== numAlea);
 
 
-const pessoa = {
-    nome: 'fulano',
-    idade: 6,
-    sexo: 'BB_Reborn'
+let imp = 1;
+let nome = input.question(`informe o nome da ${imp}° pessoa: `)
+let salario= input.questionInt(`Informe o seu salario de ${nome}: `)
+
+if (salario < 2100){
+    imp = 0;
+}else if (salario <= 2000){
+    imp = salario * 0.075;
+}else if (salario <= 3750){
+    imp = salario * 0.15;
+}else if (salario <= 4660){
+    imp = salario * 0.225;
+}else{
+    imp = salario * 0.275;
 }
-for (let dados in pessoa) {
-    console.log(`${dados}: ${pessoa[dados]}`) 
-}
 
-let cores = ['Azul', 'Amarelo', 'Verde', 'Vermelho', 'Transparente']
+console.log(`\n--- Imposto de renda a ser pago---`);
+console.log(`Nome: ${nome} \nImposto de renda: R$ ${imp.toFixed(2)}\n`);
